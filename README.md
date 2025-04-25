@@ -40,13 +40,6 @@ You’ll be prompted to:
 
 ---
 
-## 📸 Screenshot
-
-> _A full CLI preview demo will go here when published._
-> (You can add a `docs/cli-preview.png` and reference it)
-
----
-
 ## 🧪 Example Flow
 
 ```
