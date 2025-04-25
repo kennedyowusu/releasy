@@ -2,8 +2,10 @@
 
 **Releasy** is a developer-friendly CLI tool for Dart and Flutter projects that automates version bumping, Git tagging, and GitHub release creation. Built for developers who want to ship faster and smarter 🚀.
 
-![Releasy CLI](https://img.shields.io/badge/dart-cli-blue?logo=dart&style=flat-square)
-![MIT License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)
+![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=flat-square&logo=dart&logoColor=white)
+![CLI Tool](https://img.shields.io/badge/CLI%20Tool-Yes-blueviolet?style=flat-square)
+![Stars](https://img.shields.io/github/stars/kennedyowusu/releasy?style=social)
+![Pub Version](https://img.shields.io/pub/v/releasy.svg?style=flat-square)
 
 ---
 
@@ -25,7 +27,7 @@
 
 ```bash
 # Activate locally (in your Dart project root)
-dart pub global activate --source path ./releasy
+dart pub global activate releasy
 
 # Run it
 releasy
