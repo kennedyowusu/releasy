@@ -1,13 +1,16 @@
 name: releasy
-description: A lightweight Dart CLI tool to automate version bumping, tagging, and GitHub release creation.
+description: A lightweight Dart CLI tool to automate version bumping, Git tagging, and GitHub releases.
 version: 0.1.0
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
+
+executables:
+  releasy: releasy
+
+repository: https://github.com/kennedyowusu/releasy
+homepage: https://kennedyowusu.com
 
 dependencies:
   args: ^2.4.2
   yaml: ^3.1.2
-
-executables:
-  releasy: bin/releasy.dart
