@@ -44,8 +44,17 @@ void runReleasy() async {
   changelogFile.createSync(recursive: true);
 
   stdout.writeln(
-      '\n✍️ Paste changelog below (Markdown). Press CTRL+D to finish:\n');
-  final changelog = await stdin.transform(SystemEncoding().decoder).join();
+    '\n✍️ Paste your changelog below (markdown). Press CTRL+D when done:\n',
+  );
+  final changelogLines = <String>[];
+
+  while (true) {
+    final line = stdin.readLineSync();
+    if (line == null) break;
+    changelogLines.add(line);
+  }
+
+  final changelog = changelogLines.join('\n');
   changelogFile.writeAsStringSync(changelog.trim());
 
   // Ensure pubspec.yaml exists
